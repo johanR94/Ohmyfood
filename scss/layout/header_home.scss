@@ -1,0 +1,65 @@
+@import '/scss/utils/mixin.scss';
+@import '/scss/utils/variable.scss';
+@media screen and (max-width: 600px){
+.header {
+   background-color: white;
+    width: 100%;
+   @include column-center-content;
+    &__logo{
+        @include header-logo;
+        margin: 10px 0 10px 0;
+    }
+    .location{
+        background-color:$location-color ;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        box-shadow: 0px 4px 10px #00000026 inset, 0px 4px 4px 0px #00000040;
+        &__icon{
+            margin-right: 15px;
+        }
+    }
+}   }
+@media screen and (min-width: 601px)  and (max-width:1025px) {
+    .header{
+        width: 100%;
+        @include row-wrap-content;
+         &__logo{
+             @include header-logo;
+             margin: 10px 0 10px 0;
+         }
+         .location{
+             background-color:$location-color ;
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 50px;
+             box-shadow: 0px 4px 10px #00000026 inset, 0px 4px 4px 0px #00000040;
+             &__icon{
+                 margin-right: 15px;
+             }
+         }
+    }
+}
+.header{
+    width: 100%;
+    @include row-wrap-content;
+     &__logo{
+         @include header-logo;
+         margin: 10px 0 10px 0;
+     }
+     .location{
+         background-color:$location-color ;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 50px;
+         box-shadow: 0px 4px 10px #00000026 inset, 0px 4px 4px 0px #00000040;
+         &__icon{
+             margin-right: 15px;
+         }
+        }}

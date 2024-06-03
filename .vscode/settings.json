@@ -1,0 +1,18 @@
+{
+    "scss.validate": true,
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/scss",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.rootIsWorkspace": true,
+    "liveSassCompile.settings.includeItems": [
+
+    ]
+}

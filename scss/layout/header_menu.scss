@@ -1,0 +1,56 @@
+@import '/scss/utils/mixin.scss';
+@import '/scss/utils/variable.scss';
+@media screen and (max-width: 600.99px){
+.header__page{
+       background-color: white;
+       &__nav{
+              @include header-nav;
+       }
+       gap: 20%;
+   
+   &__logo{
+          @include header-logo;
+   }
+   &__return{ 
+    font-size: 24px;
+    margin-left: 23px;
+    color: black;
+    
+   }
+ 
+
+}}
+@media screen and (min-width: 601px) and (max-width:1024px){
+       .header__page{
+              
+       &__nav{
+              @include header-nav;
+              gap: 35%;
+              height: 60px;
+       }
+       &__logo{
+             @include header-logo;
+      }
+       &__return{
+       font-size: 24px;
+       margin-left: 23px;
+       color: black;
+       
+      }}}
+
+      @media screen and (min-width: 1025px) {
+       .header__page{
+              padding-top: 15px;
+       &__nav{
+              @include header-nav;
+              gap:40%;
+       }
+       &__logo{
+             @include header-logo;
+      }
+       &__return{
+       font-size: 24px;
+       margin-left: 23px;
+       color: black;
+       
+      }}}
