@@ -5,13 +5,14 @@
 /* fonctionnement */
 /* restaurant */
 /* mixin menu-page*/
+/* footer */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @media screen and (max-width: 600px) {
   .restaurants__page {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
   .menu {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     border-radius: 40px 40px 0px 0px;
     position: relative;
     bottom: 40px;
@@ -54,7 +55,6 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    /* !!!!!! A faire !!!!!! */
   }
   .menu__item--title, .menu__item--accompagnement {
     margin: 0;
@@ -75,16 +75,16 @@
     padding: 0 5% 0 5%;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
     height: 50px;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     color: white;
     margin-bottom: 57px;
     cursor: pointer;
+    margin: 15px 0 15px 0;
   }
   .menu__header {
     display: flex;
     width: 100%;
     align-content: stretch;
-    /* flex-wrap: nowrap; */
     align-items: center;
     justify-content: space-around;
     margin-left: 20px;
@@ -145,20 +145,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-    animation: slidein 1s forwards;
-  }
-  .menu__item:hover .menu__item--check_dessert {
-    background: #99e2d0;
-    height: 90px;
-    width: 0;
-    opacity: 0;
-    margin-left: 100%;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
     animation: slidein 1s forwards;
   }
   .span {
@@ -166,25 +152,13 @@
     transform: rotate(360deg);
     transition: 0.4s ease-in-out;
   }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 0;
-      opacity: 0;
-    }
-    to {
-      margin-left: 10px;
-      width: 59px;
-      opacity: 1;
-    }
-  }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .restaurants__page {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
   .menu {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     border-radius: 40px 40px 0px 0px;
     position: relative;
     bottom: 40px;
@@ -282,7 +256,7 @@
     padding: 0 5% 0 5%;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
     height: 50px;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     color: white;
     margin-bottom: 57px;
     cursor: pointer;
@@ -306,7 +280,7 @@
     display: flex;
     align-items: flex-end;
   }
-  .menu__item:hover .menu__item::before .menu__item--check {
+  .menu__item:hover .menu__item--check {
     background: #99e2d0;
     height: 90px;
     width: 0;
@@ -316,7 +290,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    animation: slidein 1s forwards;
   }
   .span {
     color: white;
@@ -338,7 +312,7 @@
 }
 @media screen and (min-width: 1025px) {
   .menu {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     border-radius: 40px 40px 0px 0px;
     position: relative;
     bottom: 40px;
@@ -373,6 +347,7 @@
   }
   .menu__title {
     display: inline-block;
+    margin-right: 25px;
   }
   .menu__item {
     margin-bottom: 15px;
@@ -430,7 +405,7 @@
     padding: 0 5% 0 5%;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
     height: 50px;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     color: white;
     margin-bottom: 57px;
     cursor: pointer;
@@ -474,10 +449,6 @@
     transition: 5s ease-in-out;
   }
 }
-.loader {
-  animation-duration: 0.1;
-}
-
 @keyframes slidein {
   from {
     margin-left: 100%;

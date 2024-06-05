@@ -35,20 +35,18 @@
         @include menu-category-description;
       }
 
-      /* !!!!!! A faire !!!!!! */
+ 
     }
-    // &__item:active{
-    //     background-color: aquamarine
-    // }
+   
     &__button {
       @include button-rounded;
+      margin: 15px 0 15px 0;
     }
   }
   .menu__header {
     display: flex;
     width: 100%;
     align-content: stretch;
-    /* flex-wrap: nowrap; */
     align-items: center;
     justify-content: space-around;
     margin-left: 20px;
@@ -89,11 +87,7 @@
   }
 
   .menu__item--text {
-    overflow: hidden;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include menu-item-text;
   }
 
   .menu__item--price {
@@ -103,51 +97,16 @@
   }
 
   .menu__item:hover .menu__item--check {
-    background: #99e2d0;
-    height: 90px;
-    width: 0;
-    opacity: 0;
-    margin-left: 100%;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
-      opacity 0.4s ease-in-out;
-    animation: slidein 1s forwards;
+    @include menu-check
   }
-  .menu__item:hover .menu__item--check_dessert {
-    background: #99e2d0;
-    height: 90px;
-    width: 0;
-    opacity: 0;
-    margin-left: 100%;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
-      opacity 0.4s ease-in-out;
-    animation: slidein 1s forwards;
-  }
+
   .span {
     color: white;
     transform: rotate(360deg);
     transition: 0.4s ease-in-out;
   }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 0;
-      opacity: 0;
-    }
 
-    to {
-      margin-left: 10px;
-      width: 59px;
-      opacity: 1;
-    }
-  }
+  
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .restaurants__page {
@@ -232,11 +191,7 @@
   }
 
   .menu__item--text {
-    overflow: hidden;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include menu-item-text;
   }
 
   .menu__item--price {
@@ -244,20 +199,9 @@
     display: flex;
     align-items: flex-end;
   }
-
-  .menu__item:hover .menu__item::before .menu__item--check {
-    background: #99e2d0;
-    height: 90px;
-    width: 0;
-    opacity: 0;
-    margin-left: 100%;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
-      opacity 0.4s ease-in-out;
-  }
+  .menu__item:hover .menu__item--check {
+    @include menu-check
+   }
 
   .span {
     color: white;
@@ -299,6 +243,7 @@
     }
     &__title {
       display: inline-block;
+      margin-right: 25px;
     }
 
     &__item {
@@ -356,11 +301,8 @@
   }
 
   .menu__item--text {
-    overflow: hidden;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include menu-item-text; 
+  
   }
 
   .menu__item--price {
@@ -370,16 +312,7 @@
   }
 
   .menu__item:hover .menu__item--check {
-    background: #99e2d0;
-    height: 90px;
-    width: 0;
-    opacity: 0;
-    margin-left: 100%;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: slidein 1s forwards;
+   @include menu-check
   }
   .span {
     color: white;
@@ -387,9 +320,7 @@
     transition: 5s ease-in-out;
   }
 }
-.loader {
-  animation-duration: 0.1;
-}
+
 @include slidein;
 @include slidein2;
 @include slidein3;
