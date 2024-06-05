@@ -10,6 +10,7 @@
     background: $button-radiant;
     color:white ;
     margin-bottom: 57px; 
+    cursor: pointer;
 }
 @mixin column-center-content{
     display: flex;
@@ -55,6 +56,11 @@
     font-weight: 300;
     text-align: center;
     margin-top: 0;
+}
+@mixin préambule-form{
+    display: flex;
+    width: 300px;
+    justify-content: center;
 }
 /* fonctionnement */
 @mixin fonctionnement {
@@ -234,4 +240,44 @@
           
       }
       
-    
+@mixin slidein{
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 0;
+          opacity: 0;
+        }
+      
+        to {
+          margin-left: 10px;
+          width: 59px;
+          opacity: 1;
+        }
+      }
+}
+@mixin slidein2 {
+    @keyframes slidein2 {
+        from {
+            margin-bottom: 100%;
+            width: 0;
+        }
+        to{
+            margin:0;
+        }
+        
+    }
+} 
+@mixin slidein3{
+    @keyframes slidein3 {
+        from {
+            width: 100%;
+            opacity: 0;
+
+        }
+        to {
+            width: 60px;
+            opacity: 1;
+            width: 40px;
+        }
+    }
+}   
