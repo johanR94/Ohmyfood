@@ -1,283 +1,281 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
-@mixin button-rounded{
-    border-radius: 25px;
-    border: none;
-    font-size: 16px;
-    padding: 0 5% 0 5%;
-    box-shadow: 0px 4px 10px 0px #00000040;   
-    height: 50px;
-    background: $button-radiant;
-    color:white ;
-    margin-bottom: 57px; 
-    cursor: pointer;
+@mixin button-rounded {
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  padding: 0 5% 0 5%;
+  box-shadow: 0px 4px 10px 0px #00000040;
+  height: 50px;
+  background: $button-radiant;
+  color: white;
+  margin-bottom: 57px;
+  cursor: pointer;
 }
-@mixin column-center-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@mixin column-center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@mixin row-wrap-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+@mixin row-wrap-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
-@mixin header-nav{
-    display: flex;
-    justify-content: flex-start;
-    gap: 20%;
-    align-items: center;
-    flex-wrap: wrap;
+@mixin header-nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20%;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @mixin header-logo {
-    font-family: "Shrikhand", serif;
-    font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
 }
 /* mixin home-page*/
-/* préambule */ 
-@mixin préambule{
-        @include column-center-content;
-        background-color: $main-color;
+/* préambule */
+@mixin préambule {
+  @include column-center-content;
+  background-color: $main-color;
 }
 
-@mixin préambule-title{
-    font-size: 24px;
-    text-align: center;
-    margin-top: 40px;
+@mixin préambule-title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 40px;
 }
-@mixin préambule-content{
-    width: 75%;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
-    margin-top: 0;
+@mixin préambule-content {
+  width: 75%;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0;
 }
-@mixin préambule-form{
-    display: flex;
-    width: 300px;
-    justify-content: center;
+@mixin préambule-form {
+  display: flex;
+  width: 300px;
+  justify-content: center;
 }
 /* fonctionnement */
 @mixin fonctionnement {
-    position: relative;
+  position: relative;
 }
 @mixin fonctionnement-title {
-    font-size: 24px;
-    margin-left:20px;
+  font-size: 24px;
+  margin-left: 20px;
 }
 @mixin fonctionnement-list {
-    list-style: none;
-    counter-reset: item;
-    padding: 0;
-    margin: 0 20px 0 20px;
-    border-radius: 15px;
+  list-style: none;
+  counter-reset: item;
+  padding: 0;
+  margin: 0 20px 0 20px;
+  border-radius: 15px;
 }
 @mixin fonctionnement-icon {
-    padding-left: 22px;
-    color: $fonctionnement-logo-color;
+  padding-left: 22px;
+  color: $fonctionnement-logo-color;
 }
-@mixin fonctionnement-item{
-        height: 73px;
-        background: $main-color;
-        border-radius: 20px;
-        margin: 25px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 22px;
-        box-shadow: 0px 4px 15px 0px #00000026;
-        font-weight: 500;
+@mixin fonctionnement-item {
+  height: 73px;
+  background: $main-color;
+  border-radius: 20px;
+  margin: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 22px;
+  box-shadow: 0px 4px 15px 0px #00000026;
+  font-weight: 500;
 }
-@mixin fonctionnement-item-counter{
-    content: counters(item, "") " "; counter-increment: item ;
-    border-radius:50% ;
-    background: $button-radiant;
-    height: 24px;
-    width: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 30px;
-    color: $main-color;
-    background:$fonctionnement-second-color ;
+@mixin fonctionnement-item-counter {
+  content: counters(item, "") " ";
+  counter-increment: item;
+  border-radius: 50%;
+  background: $button-radiant;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+  color: $main-color;
+  background: $fonctionnement-second-color;
 }
-/* restaurant */ 
+/* restaurant */
 
 @mixin restaurant {
-    background-color: $main-color;
+  background-color: $main-color;
 }
-@mixin restaurant-title{
-    font-size: 24px;
-    margin:0 0 0 20px;
-    padding-top: 54px;
+@mixin restaurant-title {
+  font-size: 24px;
+  margin: 0 0 0 20px;
+  padding-top: 54px;
 }
-@mixin restaurant-list{
-    margin: 18px 18px 0 18px;
-            padding-bottom: 66px;
+@mixin restaurant-list {
+  margin: 18px 18px 0 18px;
+  padding-bottom: 66px;
 }
 @mixin restaurant-link {
-    text-decoration: none;
+  text-decoration: none;
 }
-@mixin restaurant-article{
-    background-color:#FFFFFF;
-            border-radius: 15px;
-            color: black;
-            position: relative;
-            margin-bottom:18px ;
+@mixin restaurant-article {
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: black;
+  position: relative;
+  margin-bottom: 18px;
 }
-@mixin restaurant-img{
-    border-radius: 15px 15px 0 0 ;
-    height:251px ;
-    width: 100%;
-    object-fit: cover
+@mixin restaurant-img {
+  border-radius: 15px 15px 0 0;
+  height: 251px;
+  width: 100%;
+  object-fit: cover;
 }
-@mixin restaurant-new{
-    padding: 7px 9px 7px 9px;
-    background: #99E2D0;
-    color: #008766;
-    box-shadow: 0px 2px 4px 0px #00000026;
-    font-size: 14px;
-    font-weight: 500;
-    position: absolute;
-    top:15px;
-    right: 15px;
+@mixin restaurant-new {
+  padding: 7px 9px 7px 9px;
+  background: #99e2d0;
+  color: #008766;
+  box-shadow: 0px 2px 4px 0px #00000026;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
-@mixin restaurant-name{
-    margin: 16px 0 5px 13px;
-    font-size: 18px;
-    font-weight: 700;
+@mixin restaurant-name {
+  margin: 16px 0 5px 13px;
+  font-size: 18px;
+  font-weight: 700;
 }
-@mixin restaurant-location{
-    display: inline-block;
-    margin: 0 0 12px 13px;
-    font-size: 17px;
-    font-weight: 300;
+@mixin restaurant-location {
+  display: inline-block;
+  margin: 0 0 12px 13px;
+  font-size: 17px;
+  font-weight: 300;
 }
 @mixin restaurant-fav {
-    position: absolute;
-    bottom: 33px;
-    right: 25px ;
-    font-size: 21px;
-    font-weight:100;
-    cursor: pointer;
+  position: absolute;
+  bottom: 33px;
+  right: 25px;
+  font-size: 21px;
+  font-weight: 100;
+  cursor: pointer;
 }
 /* mixin menu-page*/
 @mixin menu-img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-  
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
 @mixin menu {
-    background-color: $main-color;
-    border-radius:40px 40px 0px 0px;
-    position: relative;
-    bottom: 40px;
-    @include column-center-content;
+  background-color: $main-color;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  bottom: 40px;
+  @include column-center-content;
 }
 
-@mixin menu-category{
-    width: 95%;
-    margin: 0 13px 0 13px;
+@mixin menu-category {
+  width: 95%;
+  margin: 0 13px 0 13px;
 }
 @mixin menu-category-title {
-    position: relative;
-    padding-bottom: 1%;
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
-    
+  position: relative;
+  padding-bottom: 1%;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-@mixin menu-category-title-underscore{
-        content: '';
-            position: absolute;
-            bottom: 0px;
-            left: 0%;
-            width: 40px;
-            border-bottom: 3px solid #99E2D0;
+@mixin menu-category-title-underscore {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
 }
 
 @mixin menu-category-item {
-        margin-bottom: 15px;
-        padding: 15px 0 15px 15px;
-        background-color: white;
-        height: 90px;
-        border-radius: 15px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
+  margin-bottom: 15px;
+  padding: 15px 0 15px 15px;
+  background-color: white;
+  height: 90px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-@mixin menu-category-description{
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    max-width: 100%;
-    overflow: hidden;
-    flex: 1;
-    gap: 1rem;
+@mixin menu-category-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  overflow: hidden;
+  flex: 1;
+  gap: 1rem;
 }
-@mixin loader{
-        
-       
-        border: 16px solid #f3f3f3; /* Light grey */
-        border-top: 16px solid #3498db; /* Blue */
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        animation: spin 2s linear infinite;
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-          }
-          
-      }
-      
-@mixin slidein{
-    @keyframes slidein {
-        from {
-          margin-left: 100%;
-          width: 0;
-          opacity: 0;
-        }
-      
-        to {
-          margin-left: 10px;
-          width: 59px;
-          opacity: 1;
-        }
-      }
+@mixin loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@mixin slidein {
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 0;
+      opacity: 0;
+    }
+
+    to {
+      margin-left: 10px;
+      width: 59px;
+      opacity: 1;
+    }
+  }
 }
 @mixin slidein2 {
-    @keyframes slidein2 {
-        from {
-            margin-bottom: 100%;
-            width: 0;
-        }
-        to{
-            margin:0;
-        }
-        
+  @keyframes slidein2 {
+    from {
+      margin-bottom: 100%;
+      width: 0;
     }
-} 
-@mixin slidein3{
-    @keyframes slidein3 {
-        from {
-            width: 100%;
-            opacity: 0;
-
-        }
-        to {
-            width: 60px;
-            opacity: 1;
-            width: 40px;
-        }
+    to {
+      margin: 0;
     }
-}   
+  }
+}
+@mixin slidein3 {
+  @keyframes slidein3 {
+    from {
+      width: 100%;
+      opacity: 0;
+    }
+    to {
+      width: 60px;
+      opacity: 1;
+      width: 40px;
+    }
+  }
+}

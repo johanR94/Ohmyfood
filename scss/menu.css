@@ -38,7 +38,7 @@
     bottom: 0px;
     left: 0%;
     width: 40px;
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid #99e2d0;
   }
   .menu__title {
     font-family: "Shrikhand", serif;
@@ -112,7 +112,7 @@
     position: absolute;
     bottom: 2px;
     height: 100%;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -224,7 +224,7 @@
     font-size: 24px;
     position: absolute;
     bottom: -1px;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -247,7 +247,7 @@
     bottom: 0px;
     left: 0%;
     width: 40px;
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid #99e2d0;
   }
   .menu__title {
     display: inline-block;
@@ -368,7 +368,7 @@
     bottom: 0px;
     left: 0%;
     width: 40px;
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid #99e2d0;
     animation: slidein3 3s ease-in-out;
   }
   .menu__title {
@@ -418,7 +418,7 @@
     position: absolute;
     bottom: 2px;
     height: 100%;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
