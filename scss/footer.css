@@ -5,6 +5,7 @@
 /* fonctionnement */
 /* restaurant */
 /* mixin menu-page*/
+/* footer */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @media screen and (max-width: 600px) {
   .footer {
@@ -39,18 +40,19 @@
     color: white;
     padding: 22px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
   }
   .footer__logo {
-    width: 30%;
-    height: 20%;
+    height: 27%;
     filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(320deg) brightness(102%) contrast(107%);
   }
   .footer__content {
+    display: flex;
+    width: 50%;
     list-style: none;
     padding: 0;
+    justify-content: space-around;
   }
   .footer__list {
     line-height: 25px;
@@ -70,8 +72,7 @@
     align-items: center;
   }
   .footer__logo {
-    width: 8%;
-    height: 8%;
+    height: 27px;
     filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(320deg) brightness(102%) contrast(107%);
   }
   .footer__content {

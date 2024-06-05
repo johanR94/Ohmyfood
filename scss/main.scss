@@ -1,16 +1,3 @@
-
-* {
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-.container {
-  width: 100%;
-  max-width: 1440px;
-}
 @import "utils/mixin";
 @import "utils/variable";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
@@ -21,3 +8,16 @@ body {
 @import "layout/header_menu";
 @import "pages/home";
 
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body,.restaurants__page {
+  margin: 0;
+
+}
+.container {
+  width: 100%;
+  max-width: 2000px;
+}

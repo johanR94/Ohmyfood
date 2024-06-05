@@ -223,6 +223,23 @@
   flex: 1;
   gap: 1rem;
 }
+/* footer */
+@mixin footer-large{
+  background: $footer-color;
+  color: white;
+  padding: 22px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+@mixin footer-large-content{
+  display: flex;
+  width: 65%;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
+}
 @mixin loader {
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */
