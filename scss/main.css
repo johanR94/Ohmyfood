@@ -1233,6 +1233,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    margin-bottom: 30px;
   }
   .fonctionnement__title {
     font-size: 24px;
@@ -1498,7 +1499,9 @@
   box-sizing: border-box;
 }
 
-body, .restaurants__page {
+body {
+  display: flex;
+  justify-content: center;
   margin: 0;
 }
 

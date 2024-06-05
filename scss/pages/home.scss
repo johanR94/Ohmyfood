@@ -267,6 +267,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    margin-bottom: 30px;
 
     &__title {
       @include fonctionnement-title;

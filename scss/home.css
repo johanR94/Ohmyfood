@@ -5,6 +5,7 @@
 /* fonctionnement */
 /* restaurant */
 /* mixin menu-page*/
+/* footer */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @media screen and (max-width: 600px) {
   .préambule {
@@ -447,6 +448,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    margin-bottom: 30px;
   }
   .fonctionnement__title {
     font-size: 24px;
