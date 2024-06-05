@@ -1413,7 +1413,7 @@ body {
   }
 }
 .loader {
-  background: linear-gradient(to bottom right, #9356dc, cyan);
+  background: linear-gradient(to bottom right, #9356dc, #ff79da 123.93%);
   display: flex;
   height: 100%;
   width: 100%;
@@ -1433,7 +1433,7 @@ body {
 .loader span img {
   font-family: "Shrikhand", serif;
   font-size: 65px;
-  color: white;
+  filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(320deg) brightness(102%) contrast(107%);
 }
 
 .spinner {
@@ -1452,7 +1452,7 @@ body {
   height: 60px;
   width: 60px;
   border: 6px solid;
-  border-color: pink transparent pink transparent;
+  border-color: purple transparent purple transparent;
   border-radius: 50%;
   animation: spin 2s linear infinite;
   animation: scalanim 2s linear infinite;

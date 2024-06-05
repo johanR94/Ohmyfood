@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
   .préambule__title {
     font-size: 24px;
@@ -38,7 +38,7 @@
     padding: 0 5% 0 5%;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
     height: 50px;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     color: white;
     margin-bottom: 57px;
     cursor: pointer;
@@ -59,14 +59,14 @@
   }
   .fonctionnement__icon {
     padding-left: 22px;
-    color: #7E7E7E;
+    color: #7e7e7e;
   }
   .fonctionnement__icon--purple {
-    color: #9356DC;
+    color: #9356dc;
   }
   .fonctionnement__item {
     height: 73px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     border-radius: 20px;
     margin: 25px;
     display: flex;
@@ -80,7 +80,7 @@
     content: counters(item, "") " ";
     counter-increment: item;
     border-radius: 50%;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     height: 24px;
     width: 24px;
     display: flex;
@@ -88,11 +88,11 @@
     align-items: center;
     position: absolute;
     left: 30px;
-    color: #F6F6F6;
-    background: #9356DC;
+    color: #f6f6f6;
+    background: #9356dc;
   }
   .restaurants {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
   .restaurants__title {
     font-size: 24px;
@@ -107,7 +107,7 @@
     text-decoration: none;
   }
   .restaurants__article {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 15px;
     color: black;
     position: relative;
@@ -122,7 +122,7 @@
   }
   .restaurants__new {
     padding: 7px 9px 7px 9px;
-    background: #99E2D0;
+    background: #99e2d0;
     color: #008766;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     font-size: 14px;
@@ -185,7 +185,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
   .préambule__title {
     font-size: 24px;
@@ -211,7 +211,7 @@
     padding: 0 5% 0 5%;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
     height: 50px;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     color: white;
     margin-bottom: 57px;
     cursor: pointer;
@@ -239,14 +239,14 @@
   }
   .fonctionnement__icon {
     padding-left: 22px;
-    color: #7E7E7E;
+    color: #7e7e7e;
   }
   .fonctionnement__icon--purple {
-    color: #9356DC;
+    color: #9356dc;
   }
   .fonctionnement__item {
     height: 73px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     border-radius: 20px;
     margin: 25px;
     display: flex;
@@ -265,7 +265,7 @@
     content: counters(item, "") " ";
     counter-increment: item;
     border-radius: 50%;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     height: 24px;
     width: 24px;
     display: flex;
@@ -273,13 +273,13 @@
     align-items: center;
     position: absolute;
     left: 30px;
-    color: #F6F6F6;
-    background: #9356DC;
+    color: #f6f6f6;
+    background: #9356dc;
     position: relative;
     left: -11px;
   }
   .restaurants {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
   .restaurants__title {
     font-size: 24px;
@@ -302,7 +302,7 @@
     width: 45%;
   }
   .restaurants__article {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 15px;
     color: black;
     position: relative;
@@ -317,7 +317,7 @@
   }
   .restaurants__new {
     padding: 7px 9px 7px 9px;
-    background: #99E2D0;
+    background: #99e2d0;
     color: #008766;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     font-size: 14px;
@@ -387,7 +387,7 @@
     margin: 10px 0 10px 0;
   }
   .header .location {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,7 +404,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
   }
   .préambule__title {
     font-size: 24px;
@@ -436,7 +436,7 @@
     padding: 0 5% 0 5%;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
     height: 50px;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     color: white;
     margin-bottom: 57px;
     cursor: pointer;
@@ -465,14 +465,14 @@
   }
   .fonctionnement__icon {
     padding-left: 22px;
-    color: #7E7E7E;
+    color: #7e7e7e;
   }
   .fonctionnement__icon--purple {
-    color: #9356DC;
+    color: #9356dc;
   }
   .fonctionnement__item {
     height: 73px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     border-radius: 20px;
     margin: 25px;
     display: flex;
@@ -497,7 +497,7 @@
     content: counters(item, "") " ";
     counter-increment: item;
     border-radius: 50%;
-    background: linear-gradient(353deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     height: 24px;
     width: 24px;
     display: flex;
@@ -505,12 +505,12 @@
     align-items: center;
     position: absolute;
     left: 30px;
-    color: #F6F6F6;
-    background: #9356DC;
+    color: #f6f6f6;
+    background: #9356dc;
     left: -9px;
   }
   .restaurants {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -541,7 +541,7 @@
     z-index: 1;
   }
   .restaurants__article {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 15px;
     color: black;
     position: relative;
@@ -565,7 +565,7 @@
   }
   .restaurants__new {
     padding: 7px 9px 7px 9px;
-    background: #99E2D0;
+    background: #99e2d0;
     color: #008766;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     font-size: 14px;
@@ -619,7 +619,7 @@
   }
 }
 .loader {
-  background: linear-gradient(to bottom right, #9356DC, cyan);
+  background: linear-gradient(to bottom right, #9356dc, #ff79da 123.93%);
   display: flex;
   height: 100%;
   width: 100%;
@@ -639,7 +639,7 @@
 .loader span img {
   font-family: "Shrikhand", serif;
   font-size: 65px;
-  color: white;
+  filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(320deg) brightness(102%) contrast(107%);
 }
 
 .spinner {
@@ -658,7 +658,7 @@
   height: 60px;
   width: 60px;
   border: 6px solid;
-  border-color: pink transparent pink transparent;
+  border-color: purple transparent purple transparent;
   border-radius: 50%;
   animation: spin 2s linear infinite;
   animation: scalanim 2s linear infinite;
