@@ -163,6 +163,8 @@
     }
     &__item::before {
       @include fonctionnement-item-counter;
+      left: -8px;
+
     }
 
   }
@@ -341,7 +343,7 @@
       font-weight: 900;
       font-size: 25px;
       position: absolute;
-      bottom: 3px;
+      bottom: -1px;
       background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
       -webkit-background-clip: text;
       background-clip: text;

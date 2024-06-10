@@ -144,9 +144,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     left: 30px;
     color: #f6f6f6;
     background: #9356dc;
+    left: -8px;
   }
   .restaurants {
     background-color: #f6f6f6;
@@ -328,6 +330,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     left: 30px;
     color: #f6f6f6;
     background: #9356dc;
@@ -422,7 +425,7 @@
     font-weight: 900;
     font-size: 25px;
     position: absolute;
-    bottom: 3px;
+    bottom: -1px;
     background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -618,6 +621,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     left: 30px;
     color: #f6f6f6;
     background: #9356dc;

@@ -25,9 +25,14 @@
   .footer__content {
     list-style: none;
     padding: 0;
+    text-decoration: none;
   }
   .footer__list {
     line-height: 25px;
+  }
+  .footer__link {
+    text-decoration: none;
+    color: white;
   }
   .footer__icon {
     width: 9px;
@@ -49,13 +54,17 @@
   }
   .footer__content {
     display: flex;
-    width: 50%;
+    width: 65%;
     list-style: none;
     padding: 0;
     justify-content: space-around;
   }
   .footer__list {
     line-height: 25px;
+  }
+  .footer__link {
+    text-decoration: none;
+    color: white;
   }
   .footer__icon {
     width: 9px;
@@ -77,13 +86,17 @@
   }
   .footer__content {
     display: flex;
-    width: 50%;
+    width: 65%;
     list-style: none;
     padding: 0;
     justify-content: space-around;
   }
   .footer__list {
     line-height: 25px;
+  }
+  .footer__link {
+    text-decoration: none;
+    color: white;
   }
   .footer__icon {
     width: 9px;

@@ -18,9 +18,14 @@
     &__content {
       list-style: none;
       padding: 0;
+      text-decoration: none;
     }
     &__list {
       line-height: 25px;
+    }
+    &__link{
+      text-decoration: none;
+      color: white;
     }
     &__icon {
       width: 9px;
@@ -37,10 +42,14 @@
         brightness(102%) contrast(107%);
     }
     &__content {
-      @include footer-large-content
+      @include footer-large-content;
     }
     &__list {
       line-height: 25px;
+    }
+    &__link{
+      text-decoration: none;
+      color: white;
     }
     &__icon {
       width: 9px;
@@ -51,16 +60,21 @@
 @media screen and (min-width: 1025px) {
   .footer {
     @include footer-large;
+    
     &__logo {
       height: 27px;
       filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(320deg)
         brightness(102%) contrast(107%);
     }
     &__content {
-     @include footer-large-content
+     @include footer-large-content;
     }
     &__list {
       line-height: 25px;
+    }
+    &__link{
+      text-decoration: none;
+      color: white;
     }
     &__icon {
       width: 9px;

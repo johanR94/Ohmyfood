@@ -7,7 +7,7 @@
   .menu {
     @include menu;
 
-    .menu__category {
+    &__category {
       @include menu-category;
       animation: slidein2 3s alternate;
 
@@ -42,33 +42,43 @@
       @include button-rounded;
       margin: 15px 0 15px 0;
     }
+  
+    &__header {
+      display: flex;
+      width: 100%;
+      align-content: stretch;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 20px;
+      gap: 24px;
+      font-family: "Shrikhand", serif;
   }
-  .menu__header {
-    display: flex;
-    width: 100%;
-    align-content: stretch;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 20px;
-    gap: 24px;
-    font-family: "Shrikhand", serif;
-  }
-  .fav-toggle {
-    display: none;
-  }
-
-  .menu__fav {
+  &__fav {
     position: relative;
     display: inline-block;
     cursor: pointer;
   }
-
-  .menu__fav i {
+  &__fav i {
     font-size: 24px;
     color: black;
     transition: color 0.3s;
   }
+  &__img {
+    @include menu-img;
+  }
 
+ &__item--text {
+    @include menu-item-text;
+  }
+
+  &__item--price {
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+  }
+  .fav-toggle {
+    display: none;
+  }
   .fav-toggle:checked + .menu__fav::before {
     content: "\f004"; /* Code unicode pour le cœur rempli */
     font-family: "Font Awesome 6 Free";
@@ -82,32 +92,17 @@
     background-clip: text;
     color: transparent;
   }
-  .menu__img {
-    @include menu-img;
-  }
-
-  .menu__item--text {
-    @include menu-item-text;
-  }
-
-  .menu__item--price {
-    font-weight: 600;
-    display: flex;
-    align-items: flex-end;
-  }
 
   .menu__item:hover .menu__item--check {
     @include menu-check
   }
-
   .span {
     color: white;
     transform: rotate(360deg);
     transition: 0.4s ease-in-out;
   }
-
   
-}
+}}
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .restaurants__page {
     background-color: $main-color;
@@ -129,13 +124,13 @@
       display: none;
     }
 
-    .menu__fav {
+    &__fav {
       position: relative;
       display: inline-block;
       cursor: pointer;
     }
 
-    .menu__fav i {
+    &__fav i {
       font-size: 24px;
       color: black;
       transition: color 0.3s;
@@ -153,7 +148,7 @@
       background-clip: text;
       color: transparent;
     }
-    .menu__category {
+    &__category {
       @include menu-category;
       animation: slidein2 3s alternate;
 
@@ -184,21 +179,22 @@
       @include button-rounded;
       margin-top: 30px;
     }
+    &__img {
+      @include menu-img;
+    }
+  
+    &__item--text {
+      @include menu-item-text;
+    }
+  
+    &__item--price {
+      font-weight: 600;
+      display: flex;
+      align-items: flex-end;
+    }
   }
 
-  .menu__img {
-    @include menu-img;
-  }
-
-  .menu__item--text {
-    @include menu-item-text;
-  }
-
-  .menu__item--price {
-    font-weight: 600;
-    display: flex;
-    align-items: flex-end;
-  }
+  
   .menu__item:hover .menu__item--check {
     @include menu-check
    }

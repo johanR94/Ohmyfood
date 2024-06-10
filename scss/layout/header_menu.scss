@@ -43,8 +43,10 @@
       @include header-nav;
       gap: 40%;
     }
-    &__logo {
+    &__logo a {
       @include header-logo;
+      text-decoration: none;
+      color: black;
     }
     &__return {
       font-size: 24px;

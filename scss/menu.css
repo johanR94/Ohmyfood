@@ -21,19 +21,19 @@
     justify-content: center;
     align-items: center;
   }
-  .menu .menu__category {
+  .menu__category {
     width: 95%;
     margin: 0 13px 0 13px;
     animation: slidein2 3s alternate;
   }
-  .menu .menu__category--title {
+  .menu__category--title {
     position: relative;
     padding-bottom: 1%;
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
   }
-  .menu .menu__category--title::after {
+  .menu__category--title::after {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -91,9 +91,6 @@
     gap: 24px;
     font-family: "Shrikhand", serif;
   }
-  .fav-toggle {
-    display: none;
-  }
   .menu__fav {
     position: relative;
     display: inline-block;
@@ -103,19 +100,6 @@
     font-size: 24px;
     color: black;
     transition: color 0.3s;
-  }
-  .fav-toggle:checked + .menu__fav::before {
-    content: "\f004"; /* Code unicode pour le cœur rempli */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 25px;
-    position: absolute;
-    bottom: 2px;
-    height: 100%;
-    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
   }
   .menu__img {
     width: 100%;
@@ -135,7 +119,23 @@
     display: flex;
     align-items: flex-end;
   }
-  .menu__item:hover .menu__item--check {
+  .menu .fav-toggle {
+    display: none;
+  }
+  .menu .fav-toggle:checked + .menu__fav::before {
+    content: "\f004"; /* Code unicode pour le cœur rempli */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 25px;
+    position: absolute;
+    bottom: 2px;
+    height: 100%;
+    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .menu .menu__item:hover .menu__item--check {
     background: #99e2d0;
     height: 90px;
     width: 0;
@@ -147,7 +147,7 @@
     justify-content: center;
     animation: slidein 1s forwards;
   }
-  .span {
+  .menu .span {
     color: white;
     transform: rotate(360deg);
     transition: 0.4s ease-in-out;
@@ -181,12 +181,12 @@
   .menu .fav-toggle {
     display: none;
   }
-  .menu .menu__fav {
+  .menu__fav {
     position: relative;
     display: inline-block;
     cursor: pointer;
   }
-  .menu .menu__fav i {
+  .menu__fav i {
     font-size: 24px;
     color: black;
     transition: color 0.3s;
@@ -203,19 +203,19 @@
     background-clip: text;
     color: transparent;
   }
-  .menu .menu__category {
+  .menu__category {
     width: 95%;
     margin: 0 13px 0 13px;
     animation: slidein2 3s alternate;
   }
-  .menu .menu__category--title {
+  .menu__category--title {
     position: relative;
     padding-bottom: 1%;
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
   }
-  .menu .menu__category--title::after {
+  .menu__category--title::after {
     content: "";
     position: absolute;
     bottom: 0px;
