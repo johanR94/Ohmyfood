@@ -12,14 +12,17 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-
 body {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   margin: 0;
-
+  
 }
 .container {
   width: 100%;
   max-width: 2000px;
+  
 }
+@include slidein;
+@include slidein2;
+@include slidein3;
