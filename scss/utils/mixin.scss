@@ -25,6 +25,15 @@
   align-content: center;
   align-items: center;
 }
+@mixin header-location{
+  background-color: $location-color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 4px 10px #00000026 inset, 0px 4px 4px 0px #00000040;
+}
 @mixin header-nav {
   display: flex;
   justify-content: flex-start;
@@ -37,6 +46,10 @@
   font-size: 30px;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0 10px 0;
+
 }
 /* mixin home-page*/
 /* préambule */
@@ -51,7 +64,7 @@
   margin-top: 40px;
 }
 @mixin préambule-content {
-  width: 75%;
+  width: 90%;
   font-size: 18px;
   font-weight: 300;
   text-align: center;
@@ -124,11 +137,11 @@
 }
 @mixin restaurant-link {
   text-decoration: none;
+  color: black;
 }
 @mixin restaurant-article {
   background-color: #ffffff;
   border-radius: 15px;
-  color: black;
   position: relative;
   margin-bottom: 18px;
 }

@@ -1,46 +1,65 @@
+// Importation des mixins et variables SCSS
 @import "/scss/utils/mixin.scss";
 @import "/scss/utils/variable.scss";
+// Media query pour les écrans de largeur maximale de 600px
 @media screen and (max-width: 600px) {
+    // Styles pour la section préambule
   .préambule {
+    // Inclusion des styles de base pour préambule
     @include préambule;
+    // Inclusion des styles de titre pour préambule
     &__title {
       @include préambule-title;
     }
+     // Inclusion des styles de contenu pour préambule
     &__content {
       @include préambule-content;
     }
+    // Inclusion des styles de formulaire pour préambule
     &__form {
       @include préambule-form;
     }
+    // Inclusion des styles de bouton arrondi
     &__button {
       @include button-rounded;
     }
   }
+  // Styles pour la section fonctionnement
   .fonctionnement {
+     // Inclusion des styles de base pour fonctionnement
     @include fonctionnement;
+    // Inclusion des styles de titre pour fonctionnement
     &__title {
       @include fonctionnement-title;
     }
+    // Inclusion des styles de liste pour fonctionnement
     &__list {
       @include fonctionnement-list;
     }
+     // Inclusion des styles d'icône pour fonctionnement
     &__icon {
       @include fonctionnement-icon;
     }
+    // Couleur secondaire pour icône spécifique
     &__icon--purple {
       color: $fonctionnement-second-color;
     }
     &__item {
+      // Inclusion des styles d'élément pour fonctionnement
       @include fonctionnement-item;
+      // Animation pour l'entrée de gauche
       -webkit-animation: bounce-in-left 1.1s both;
 	        animation: bounce-in-left 1.1s both;
       &:nth-child(1){
+        // Délai d'animation pour le premier élément
         animation-delay: 2s;
       }
       &:nth-child(2){
+        // Délai d'animation pour le deuxième élément
         animation-delay: 2.9s;
       }
       &:nth-child(3){
+        // Délai d'animation pour le troisième élément
         animation-delay: 3.8s;
       }
       /* ----------------------------------------------
@@ -161,45 +180,58 @@
 }
 
     }
+        // Inclusion des styles de compteur pour élément
     &__item::before {
       @include fonctionnement-item-counter;
+       // Positionnement du compteur
       left: -8px;
 
     }
 
   }
+    // Styles pour la section restaurants
   .restaurants {
+    // Inclusion des styles de base pour restaurants
     @include restaurant;
 
     &__title {
+       // Inclusion des styles de titre pour restaurants
       @include restaurant-title;
     }
     &__list {
+       // Inclusion des styles de liste pour restaurants
       @include restaurant-list;
     }
     &__link {
+      // Inclusion des styles de lien pour restaurants
       @include restaurant-link;
     }
     &__article {
+      // Inclusion des styles d'article pour restaurants
       @include restaurant-article;
     }
     &__img {
+// Inclusion des styles d'image pour restaurants
       @include restaurant-img;
     }
 
     &__new {
+       // Inclusion des styles pour les nouveaux restaurants
       @include restaurant-new;
     }
     &__name {
+       // Inclusion des styles de nom pour restaurants
       @include restaurant-name;
     }
     &__location {
+      // Inclusion des styles de localisation pour restaurants
       @include restaurant-location;
     }
     &__fav {
+       // Inclusion des styles de favoris pour restaurants
       @include restaurant-fav;
     }
-
+    // Style de l'icon favori 
     .fav-toggle {
       display: none;
     }
@@ -233,6 +265,7 @@
     }
   }
 }
+// Media query pour les écrans de largeur entre 601px et 1024px
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .préambule {
     @include préambule;
@@ -298,10 +331,11 @@
     }
     &__link {
       @include restaurant-link;
-      width: 45%;
     }
     &__article {
       @include restaurant-article;
+            width: 45%;
+
     }
     &__img {
       @include restaurant-img;
@@ -357,7 +391,7 @@
       @include header-logo;
       margin: 10px 0 10px 0;
     }
-    .location {
+    &__location {
       background-color: $location-color;
 
       display: flex;
@@ -371,6 +405,7 @@
     }
   }
 }
+// Media query pour les écrans de largeur supérieure à 1024px
 @media screen and (min-width: 1025px) {
   .préambule {
     @include préambule;
@@ -587,14 +622,15 @@
     &__link {
       @include restaurant-link;
       height: 315px;
-      &:hover {
-        scale: 1.1;
-        z-index: 1;
-      }
+   
     }
     &__article {
       @include restaurant-article;
       width: 490px;
+      &:hover {
+        scale: 1.1;
+        z-index: 1;
+      }
       @media screen and (max-width: 1123px) {
         width: 447px;
       }
