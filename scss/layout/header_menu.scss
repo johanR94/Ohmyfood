@@ -6,14 +6,13 @@
     &__nav {
       @include header-nav;
     }
-    gap: 20%;
 
     &__logo {
       @include header-logo;
     }
     &__return {
       font-size: 24px;
-      margin-left: 23px;
+      margin-left: 15px;
       color: black;
     }
   }
@@ -43,10 +42,9 @@
       @include header-nav;
       gap: 40%;
     }
-    &__logo a {
+    &__logo {
       @include header-logo;
-      text-decoration: none;
-      color: black;
+   
     }
     &__return {
       font-size: 24px;

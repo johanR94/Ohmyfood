@@ -10,7 +10,6 @@
 @media screen and (max-width: 600.99px) {
   .header__page {
     background-color: white;
-    gap: 20%;
   }
   .header__page__nav {
     display: flex;
@@ -24,10 +23,12 @@
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    color: black;
   }
   .header__page__return {
     font-size: 24px;
-    margin-left: 23px;
+    margin-left: 15px;
     color: black;
   }
 }
@@ -46,6 +47,8 @@
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    color: black;
   }
   .header__page__return {
     font-size: 24px;
@@ -65,7 +68,7 @@
     flex-wrap: wrap;
     gap: 40%;
   }
-  .header__page__logo a {
+  .header__page__logo {
     font-family: "Shrikhand", serif;
     font-size: 30px;
     font-weight: 400;
