@@ -275,7 +275,7 @@
   justify-content: space-around;
 }
 
-
+// animation d'affichage des menus
 @mixin slidein {
   @keyframes slidein {
     from {
@@ -291,6 +291,7 @@
     }
   }
 }
+//animation menu check
 @mixin slidein2 {
   @keyframes slidein2 {
     from {
@@ -302,16 +303,4 @@
     }
   }
 }
-@mixin slidein3 {
-  @keyframes slidein3 {
-    from {
-      width: 100%;
-      opacity: 0;
-    }
-    to {
-      width: 60px;
-      opacity: 1;
-      width: 40px;
-    }
-  }
-}
+
