@@ -666,7 +666,7 @@
     width: 490px;
   }
   .restaurants__article:hover {
-    scale: 1.1;
+    transform: scale(1.1);
     z-index: 1;
   }
 }
@@ -787,13 +787,13 @@
 
 @keyframes scalanim {
   0% {
-    scale: 1;
+    transform: scale(1);
   }
   50% {
-    scale: 2;
+    transform: scale(2);
   }
   100% {
-    scale: 1;
+    transform: scale(1);
   }
 }
 @keyframes spin {
@@ -820,11 +820,19 @@
     visibility: hidden;
   }
 }
-@keyframes colorchange {
+.fav-toggle:checked + .restaurants__fav::before {
+  animation: scale-in-bottom 0.2s ease 0.2s 1 normal both;
+}
+
+@keyframes scale-in-bottom {
   0% {
-    filter: hue-rotate(0deg);
+    transform: scale(0);
+    transform-origin: 50% 100%;
+    opacity: 1;
   }
   100% {
-    filter: hue-rotate(360deg);
+    transform: scale(1);
+    transform-origin: 50% 100%;
+    opacity: 1;
   }
 }
