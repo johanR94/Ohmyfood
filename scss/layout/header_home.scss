@@ -11,9 +11,9 @@
     }
     &__location {
       @include header-location;
-      &__icon {
-        margin-right: 15px;
-      }
+    }
+    &__icon {
+      margin-right: 15px;
     }
   }
 }
@@ -27,26 +27,27 @@
     }
     &__location {
       @include header-location;
-      &__icon {
-        margin-right: 15px;
-      }
+
     }
-  }
-}
-//pc
-@media screen and (min-width: 1025px) {
-.header {
-  width: 100%;
-  @include row-wrap-content;
-  &__logo {
-    @include header-logo;
-  }
-  &__location {
-    @include header-location;
-    box-shadow: none;
     &__icon {
       margin-right: 15px;
     }
   }
 }
+//pc
+@media screen and (min-width: 1025px) {
+  .header {
+    width: 100%;
+    @include row-wrap-content;
+    &__logo {
+      @include header-logo;
+    }
+    &__location {
+      @include header-location;
+      box-shadow: none;
+    }
+    &__icon {
+      margin-right: 15px;
+    }
+  }
 }

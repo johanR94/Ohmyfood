@@ -36,15 +36,13 @@
       &--description {
         @include menu-category-description;
       }
-
- 
     }
-   
+
     &__button {
       @include button-rounded;
       margin: 15px 0 15px 0;
     }
-  
+
     &__header {
       display: flex;
       width: 100%;
@@ -53,58 +51,58 @@
       justify-content: space-around;
       margin-left: 20px;
       font-family: "Shrikhand", serif;
-  }
-  &__fav {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  &__fav i {
-    font-size: 24px;
-    color: black;
-    transition: color 0.3s;
-  }
-  &__img {
-    @include menu-img;
-  }
+    }
+    &__fav {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    &__fav i {
+      font-size: 24px;
+      color: black;
+      transition: color 0.3s;
+    }
+    &__img {
+      @include menu-img;
+    }
 
- &__item--text {
-    @include menu-item-text;
-  }
+    &__item--text {
+      @include menu-item-text;
+    }
 
-  &__item--price {
-    font-weight: 600;
-    display: flex;
-    align-items: flex-end;
+    &__item--price {
+      font-weight: 600;
+      display: flex;
+      align-items: flex-end;
+    }
+    .fav-toggle {
+      display: none;
+    }
+    //style pour le coeur
+    .fav-toggle:checked + .menu__fav::before {
+      content: "\f004"; /* Code unicode pour le cœur rempli */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 25px;
+      position: absolute;
+      bottom: 2px;
+      height: 100%;
+      background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    //hover pour la selection menu
+    .menu__item:hover .menu__item--check {
+      @include menu-check;
+    }
+    .span {
+      color: white;
+      transform: rotate(360deg);
+      transition: 0.4s ease-in-out;
+    }
   }
-  .fav-toggle {
-    display: none;
-  }
-  //style pour le coeur
-  .fav-toggle:checked + .menu__fav::before {
-    content: "\f004"; /* Code unicode pour le cœur rempli */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 25px;
-    position: absolute;
-    bottom: 2px;
-    height: 100%;
-    background: linear-gradient(353deg, #9356dc -11.44%, #ff79da 123.93%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-//hover pour la selection menu
-  .menu__item:hover .menu__item--check {
-    @include menu-check
-  }
-  .span {
-    color: white;
-    transform: rotate(360deg);
-    transition: 0.4s ease-in-out;
-  }
-  
-}}
+}
 //Version tablette
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .restaurants__page {
@@ -185,11 +183,11 @@
     &__img {
       @include menu-img;
     }
-  
+
     &__item--text {
       @include menu-item-text;
     }
-  
+
     &__item--price {
       font-weight: 600;
       display: flex;
@@ -197,17 +195,15 @@
     }
   }
 
-  
   .menu__item:hover .menu__item--check {
-    @include menu-check
-   }
+    @include menu-check;
+  }
 
   .span {
     color: white;
     transform: rotate(360deg);
     transition: 0.4s ease-in-out;
   }
-
 }
 // Version PC
 @media screen and (min-width: 1025px) {
@@ -226,7 +222,6 @@
 
       &--title::after {
         @include menu-category-title-underscore;
-   
       }
     }
     &__title {
@@ -289,8 +284,7 @@
   }
 
   .menu__item--text {
-    @include menu-item-text; 
-  
+    @include menu-item-text;
   }
 
   .menu__item--price {
@@ -300,32 +294,29 @@
   }
 
   .menu__item:hover .menu__item--check {
-   @include menu-check
+    @include menu-check;
   }
   .span {
     color: white;
     transform: rotate(-360deg);
     transition: 5s ease-in-out;
   }
-
 }
 
-//animation pour les coeurs 
-.fav-toggle:checked + .menu__fav::before
-{
-animation: scale-in-ver-bottom 0.2s ease 0.2s 1 normal both;
+//animation pour les coeurs
+.fav-toggle:checked + .menu__fav::before {
+  animation: scale-in-ver-bottom 0.2s ease 0.2s 1 normal both;
 }
 
 @keyframes scale-in-ver-bottom {
- 
-0% {
-transform:scaleY(0);
-transform-origin:0% 100%;
-opacity:1;
-}
-100% {
-transform:scaleY(1);
-transform-origin:0% 100%;
-opacity:1;
-}
+  0% {
+    transform: scaleY(0);
+    transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+    opacity: 1;
+  }
 }
