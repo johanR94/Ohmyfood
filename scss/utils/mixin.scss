@@ -224,22 +224,31 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   align-items: center;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
 }
 
 @mixin menu-item-text {
-  overflow: hidden;
-  white-space: nowrap;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  
 }
 @mixin menu-category-description {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;
+  white-space: nowrap; 
   overflow: hidden;
+  text-overflow: ellipsis;  
+  max-width: 100%;
   flex: 1;
   gap: 1rem;
 }
@@ -247,13 +256,12 @@
   background: #99e2d0;
   height: 90px;
   width: 0;
-  opacity: 0;
-  margin-left: 100%;
-  border-radius: 0 15px 15px 0;
+  font-size: 0;
+  border-radius: 0 15px 15px 0;  
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: slidein 1s forwards;
+  transition: font-size 0.8s ease-in-out, width 0.8s ease-in-out;
 }
 
 /* footer */
@@ -273,24 +281,10 @@
   padding: 0;
   justify-content: space-around;
 }
+//animation menu check
+
 
 // animation d'affichage des menus
-@mixin slidein {
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 0;
-      opacity: 0;
-    }
-
-    to {
-      margin-left: 10px;
-      width: 59px;
-      opacity: 1;
-    }
-  }
-}
-//animation menu check
 @mixin slidein2 {
   @keyframes slidein2 {
     from {

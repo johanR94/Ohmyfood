@@ -72,17 +72,25 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     cursor: pointer;
   }
   .menu__item--title, .menu__item--accompagnement {
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .menu__item--description {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
     flex: 1;
     gap: 1rem;
   }
@@ -125,16 +133,19 @@
        object-fit: cover;
   }
   .menu__item--text {
-    overflow: hidden;
-    white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
   }
   .menu__item--price {
     font-weight: 600;
     display: flex;
     align-items: flex-end;
+    margin-right: 3%;
   }
   .menu .fav-toggle {
     display: none;
@@ -152,24 +163,33 @@
     background-clip: text;
     color: transparent;
   }
-  .menu .menu__item:hover .menu__item--check {
+  .menu .menu__item--check {
     background: #99e2d0;
     height: 90px;
     width: 0;
-    opacity: 0;
-    margin-left: 100%;
+    font-size: 0;
     border-radius: 0 15px 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slidein 1s forwards;
+    transition: font-size 0.8s ease-in-out, width 0.8s ease-in-out;
   }
-  .menu .span {
+  .menu .menu__item:hover .menu__item--check {
+    font-size: 20px;
+    width: 80px;
+  }
+  .menu .span .fa-solid {
     color: white;
-    transform: rotate(360deg);
-    transition: 0.4s ease-in-out;
   }
 }
+from {
+  font-size: 1px;
+}
+
+to {
+  font-size: 20px;
+}
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .restaurants__page {
     background-color: #f6f6f6;
@@ -252,6 +272,9 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     cursor: pointer;
   }
   .menu__item--title, .menu__item--accompagnement {
@@ -261,8 +284,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
     flex: 1;
     gap: 1rem;
   }
@@ -286,33 +311,37 @@
        object-fit: cover;
   }
   .menu__item--text {
-    overflow: hidden;
-    white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
   }
   .menu__item--price {
     font-weight: 600;
     display: flex;
     align-items: flex-end;
+    margin-right: 3%;
   }
-  .menu__item:hover .menu__item--check {
+  .menu__item--check {
     background: #99e2d0;
     height: 90px;
     width: 0;
-    opacity: 0;
-    margin-left: 100%;
+    font-size: 0;
     border-radius: 0 15px 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slidein 1s forwards;
+    transition: font-size 0.8s ease-in-out, width 0.8s ease-in-out;
   }
-  .span {
+  .menu__item:hover .menu__item--check {
+    font-size: 20px;
+    width: 90px;
+  }
+  .span .fa-solid {
     color: white;
-    transform: rotate(360deg);
-    transition: 0.4s ease-in-out;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -362,6 +391,9 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     cursor: pointer;
   }
   .menu__item--title, .menu__item--accompagnement {
@@ -371,8 +403,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
     flex: 1;
     gap: 1rem;
   }
@@ -424,33 +458,37 @@
     height: 385px;
   }
   .menu__item--text {
-    overflow: hidden;
-    white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
   }
   .menu__item--price {
     font-weight: 600;
     display: flex;
     align-items: flex-end;
+    margin-right: 3%;
   }
-  .menu__item:hover .menu__item--check {
+  .menu__item--check {
     background: #99e2d0;
     height: 90px;
     width: 0;
-    opacity: 0;
-    margin-left: 100%;
+    font-size: 0;
     border-radius: 0 15px 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slidein 1s forwards;
+    transition: font-size 0.8s ease-in-out, width 0.8s ease-in-out;
   }
-  .span {
+  .menu__item:hover .menu__item--check {
+    font-size: 20px;
+    width: 90px;
+  }
+  .span .fa-solid {
     color: white;
-    transform: rotate(-360deg);
-    transition: 5s ease-in-out;
   }
 }
 .fav-toggle:checked + .menu__fav::before {
@@ -1600,18 +1638,6 @@ body {
   max-width: 1440px;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    margin-left: 10px;
-    width: 59px;
-    opacity: 1;
-  }
-}
 @keyframes slidein2 {
   from {
     margin-bottom: 100%;

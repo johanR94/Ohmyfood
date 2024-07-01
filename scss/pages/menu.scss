@@ -32,6 +32,9 @@
       &--title,
       &--accompagnement {
         margin: 0;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       &--description {
         @include menu-category-description;
@@ -74,6 +77,7 @@
       font-weight: 600;
       display: flex;
       align-items: flex-end;
+      margin-right: 3%;
     }
     .fav-toggle {
       display: none;
@@ -93,16 +97,28 @@
       color: transparent;
     }
     //hover pour la selection menu
-    .menu__item:hover .menu__item--check {
+    .menu__item--check {
       @include menu-check;
+      
     }
-    .span {
+    .menu__item:hover .menu__item--check{
+      font-size: 20px;
+      width: 80px;
+    }
+    .span .fa-solid{
       color: white;
-      transform: rotate(360deg);
-      transition: 0.4s ease-in-out;
-    }
+      }
+    
   }
 }
+
+  from{
+   font-size: 1px;
+  }
+  to{
+    font-size: 20px;
+  }
+
 //Version tablette
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .restaurants__page {
@@ -192,17 +208,21 @@
       font-weight: 600;
       display: flex;
       align-items: flex-end;
+      margin-right: 3%;
+
     }
   }
 
-  .menu__item:hover .menu__item--check {
+  .menu__item--check {
     @include menu-check;
+    
   }
-
-  .span {
+  .menu__item:hover .menu__item--check{
+    font-size: 20px;
+    width: 90px;
+  }
+  .span .fa-solid {
     color: white;
-    transform: rotate(360deg);
-    transition: 0.4s ease-in-out;
   }
 }
 // Version PC
@@ -291,15 +311,21 @@
     font-weight: 600;
     display: flex;
     align-items: flex-end;
+    margin-right: 3%;
+
   }
 
-  .menu__item:hover .menu__item--check {
+   .menu__item--check {
     @include menu-check;
+    
   }
-  .span {
+  .menu__item:hover .menu__item--check{
+    font-size: 20px;
+    width: 90px;
+  }
+
+ .span .fa-solid {
     color: white;
-    transform: rotate(-360deg);
-    transition: 5s ease-in-out;
   }
 }
 
